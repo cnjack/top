@@ -5,7 +5,8 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <link rel="stylesheet" href="/css/weui.min.css" media="screen">
+  <link rel="stylesheet" href="./css/weui.min.css" media="screen">
+  <link rel="stylesheet" href="./css/weui_top.css" media="screen">
   <title>陀螺</title>
 </head>
 
@@ -65,27 +66,45 @@
         </div>
         <div class="weui-tabbar">
           <a href="#" class="weui-tabbar__item weui-bar__item_on">
-            <img src="./img/icon_tabbar.png" alt="" class="weui-tabbar__icon">
-            <p class="weui-tabbar__label">微信</p>
+            <img src="./img/icon_tabbar_top.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">陀螺</p>
           </a>
           <a href="#" class="weui-tabbar__item">
-            <img src="./img/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <img src="./img/icon_tabbar_users.png" alt="" class="weui-tabbar__icon">
             <p class="weui-tabbar__label">通讯录</p>
           </a>
+          <a href="#" class="weui-tabbar__item" id="app-send">
+            <img src="./img/icon_tabbar_add.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">发布</p>
+          </a>
           <a href="#" class="weui-tabbar__item">
-            <img src="./img/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <img src="./img/icon_tabbar_find.png" alt="" class="weui-tabbar__icon">
             <p class="weui-tabbar__label">发现</p>
           </a>
           <a href="#" class="weui-tabbar__item">
-            <img src="./img/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <img src="./img/icon_tabbar_user.png" alt="" class="weui-tabbar__icon">
             <p class="weui-tabbar__label">我</p>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/style.js"></script>
+  <div>
+    <div class="weui-mask" id="iosMask" style="display: none;"></div>
+    <div class="weui-actionsheet" id="iosActionsheet">
+      <div class="weui-actionsheet__menu">
+        <div class="weui-actionsheet__cell">示例菜单</div>
+        <div class="weui-actionsheet__cell">示例菜单</div>
+        <div class="weui-actionsheet__cell">示例菜单</div>
+        <div class="weui-actionsheet__cell">示例菜单</div>
+      </div>
+      <div class="weui-actionsheet__action">
+        <div class="weui-actionsheet__cell" id="iosActionsheetCancel">取消</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/style.js"></script>
 </body>
 
 </html>

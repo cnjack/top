@@ -46,3 +46,20 @@ $(function() {
       '.weui-bar__item_on').removeClass('weui-bar__item_on');
   });
 });
+
+$(function() {
+  var $iosActionsheet = $('#iosActionsheet');
+  var $iosMask = $('#iosMask');
+
+  function hideActionSheet() {
+    $iosActionsheet.removeClass('weui-actionsheet_toggle');
+    $iosMask.fadeOut(200);
+  }
+
+  $iosMask.on('click', hideActionSheet);
+  $('#iosActionsheetCancel').on('click', hideActionSheet);
+  $("#app-send").on("click", function() {
+    $iosActionsheet.addClass('weui-actionsheet_toggle');
+    $iosMask.fadeIn(200);
+  });
+});
